@@ -16,6 +16,10 @@ button.onclick = function() {
     counter++; 
     document.getElementById('click-counter').innerHTML = counter;
     document.getElementById('click-counter').hidden = false;
+    if (counter === 250 && counter < 500) {
+        document.getElementById('clickme').style.width = '20%'; 
+    }
 };
+
 
 

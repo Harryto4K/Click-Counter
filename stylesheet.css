@@ -25,6 +25,7 @@ button {
     border: none;
     font-weight: bold;
     position: absolute;
+    transition: width 5s; 
 }
 
 button:hover {
