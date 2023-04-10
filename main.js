@@ -6,6 +6,8 @@ let buttonContainer = document.getElementsByClassName('button-container')[0];
 
 let counter =0;
 
+document.getElementById('click-counter').hidden = true;
+
 button.onclick = function() {
     document.getElementById('clickme').innerHTML= 'Changing Color...';
     let color = `#${hexSymbols[Math.floor(Math.random() * hexSymbols.length)]}${hexSymbols[Math.floor(Math.random() * hexSymbols.length)]}${hexSymbols[Math.floor(Math.random() * hexSymbols.length)]}${hexSymbols[Math.floor(Math.random() * hexSymbols.length)]}${hexSymbols[Math.floor(Math.random() * hexSymbols.length)]}${hexSymbols[Math.floor(Math.random() * hexSymbols.length)]}`; 
@@ -13,7 +15,7 @@ button.onclick = function() {
     document.getElementById('clickme').innerHTML= 'Click Me!';
     counter++; 
     document.getElementById('click-counter').innerHTML = counter;
+    document.getElementById('click-counter').hidden = false;
 };
-
 
 
